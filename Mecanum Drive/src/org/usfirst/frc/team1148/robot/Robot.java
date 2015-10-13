@@ -1,6 +1,5 @@
 package org.usfirst.frc.team1148.robot;
 
-
 import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Gyro;
@@ -34,7 +33,7 @@ public class Robot extends SampleRobot {
     	//server = CameraServer.getInstance();
        // server.setQuality(50);
         //the camera name (ex "cam0") can be found through the roborio web interface
-        //server.startAutomaticCapture("cam0");
+        server.startAutomaticCapture("cam0");
         robotDrive = new RobotDrive(frontLeftChannel, rearLeftChannel, frontRightChannel, rearRightChannel);
     	robotDrive.setInvertedMotor(MotorType.kFrontRight, true);	// invert the left side motors
     //	robotDrive.setInvertedMotor(MotorType.kRearLeft, true);		// you may need to change or remove this to match your robot
