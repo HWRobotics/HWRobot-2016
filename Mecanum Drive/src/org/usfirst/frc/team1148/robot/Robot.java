@@ -59,7 +59,7 @@ public class Robot extends SampleRobot {
         	if(ultraSonic.get())
         		robotDrive.mecanumDrive_Cartesian(0, 0, 0, 0);
         	else
-        		robotDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getZ()/2, gyro.getRate());
+        		robotDrive.mecanumDrive_Cartesian(stick.getX(), stick.getY(), stick.getZ()/2, gyro.getAngle());
             
             Timer.delay(0.005);	// wait 5ms to avoid hogging CPU cycles
         }
