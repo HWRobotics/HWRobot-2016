@@ -30,8 +30,8 @@ public class Robot extends SampleRobot {
     final int joystickChannel	= 0;
 
     public Robot() {
-    	//server = CameraServer.getInstance();
-       // server.setQuality(50);
+    	server = CameraServer.getInstance();
+        server.setQuality(50);
         //the camera name (ex "cam0") can be found through the roborio web interface
         server.startAutomaticCapture("cam0");
         robotDrive = new RobotDrive(frontLeftChannel, rearLeftChannel, frontRightChannel, rearRightChannel);
