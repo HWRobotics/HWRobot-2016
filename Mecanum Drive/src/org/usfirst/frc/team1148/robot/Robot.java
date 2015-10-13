@@ -42,9 +42,7 @@ public class Robot extends SampleRobot {
         stick = new Joystick(joystickChannel);
         gyro  = new Gyro(0);
         ultraSonic = new DigitalInput(0);
-        
     }
-        
 
     /**
      * Runs the motors with Mecanum drive.
